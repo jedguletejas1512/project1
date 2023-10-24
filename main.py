@@ -12,6 +12,9 @@ def open_menu():
     root.destroy()
     import menu
 
+def open_payment():
+    root.destroy()
+    import payments
 
 def open_info():
     import studentinfo
@@ -64,6 +67,9 @@ class MessManagementsystem:
         #                       cursor="hand2").pack(side=TOP, fill=X)
         btn_menu = Button(LeftMenu, text="Menu", font=("times new roman", 20, "bold"), bg="white", bd=3,
                           cursor="hand2", command=open_menu).pack(side=TOP, fill=X)
+        
+        btn_payment = Button(LeftMenu, text="Bill Payment", font=("times new roman", 20, "bold"), bg="white", bd=3,
+                          cursor="hand2", command=open_payment).pack(side=TOP, fill=X)
        
         btn_student_info = Button(LeftMenu, text="Student Info", font=("times new roman", 20, "bold"), bg="white", bd=3,
                                   cursor="hand2", command=open_info).pack(side=TOP, fill=X)
