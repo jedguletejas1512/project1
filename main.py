@@ -57,7 +57,7 @@ class MessManagementsystem:
         # self.MenuLogo = self.MenuLogo.resize((200, 200), Image.ANTIALIAS)
         # # self.MenuLogo=Image.PhotoImage(self.MenuLogo)
         LeftMenu = Frame(self.root, bd=2, relief=RIDGE, bg="white")
-        LeftMenu.place(x=0, y=102, width=200, height=205)
+        LeftMenu.place(x=0, y=102, width=200, height=265)
         # lbl_menuLogo = Label(LeftMenu, image=self.MenuLogo)
         # lbl_menuLogo.pack(side=TOP, fill=X)
 
