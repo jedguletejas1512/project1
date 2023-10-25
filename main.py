@@ -16,6 +16,9 @@ def open_payment():
     root.destroy()
     import payments
 
+def open_feedback():
+    import feedback
+
 def open_info():
     import studentinfo
 
@@ -57,7 +60,7 @@ class MessManagementsystem:
         # self.MenuLogo = self.MenuLogo.resize((200, 200), Image.ANTIALIAS)
         # # self.MenuLogo=Image.PhotoImage(self.MenuLogo)
         LeftMenu = Frame(self.root, bd=2, relief=RIDGE, bg="white")
-        LeftMenu.place(x=0, y=102, width=200, height=265)
+        LeftMenu.place(x=0, y=102, width=200, height=320)
         # lbl_menuLogo = Label(LeftMenu, image=self.MenuLogo)
         # lbl_menuLogo.pack(side=TOP, fill=X)
 
@@ -74,6 +77,9 @@ class MessManagementsystem:
         btn_student_info = Button(LeftMenu, text="Student Info", font=("times new roman", 20, "bold"), bg="white", bd=3,
                                   cursor="hand2", command=open_info).pack(side=TOP, fill=X)
         
+        btn_feedback = Button(LeftMenu, text="Feedback", font=("times new roman", 20, "bold"), bg="white", bd=3,
+                              cursor="hand2", command=open_feedback).pack(side=TOP, fill=X)
+
         btn_exit = Button(LeftMenu, text="Exit", font=("times new roman", 20, "bold"), bg="white", bd=3,
                           cursor="hand2", command=root.quit).pack(side=TOP, fill=X)
 
