@@ -15,6 +15,8 @@ def open_menu():
 def open_payment():
     root.destroy()
     import payments
+def open_attendance():
+    import attendance
 
 def open_feedback():
     import feedback
@@ -76,7 +78,8 @@ class MessManagementsystem:
        
         btn_student_info = Button(LeftMenu, text="Student Info", font=("times new roman", 20, "bold"), bg="white", bd=3,
                                   cursor="hand2", command=open_info).pack(side=TOP, fill=X)
-        
+        btn_attendance = Button(LeftMenu, text="Attendance", font=("times new roman", 20, "bold"), bg="white", bd=3,
+                                cursor="hand2", command=open_attendance).pack(side=TOP, fill=X)
         btn_feedback = Button(LeftMenu, text="Feedback", font=("times new roman", 20, "bold"), bg="white", bd=3,
                               cursor="hand2", command=open_feedback).pack(side=TOP, fill=X)
 
